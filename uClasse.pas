@@ -25,14 +25,6 @@ interface
     constructor Create (Dano, Defesa: Integer);
   end;
 
-  //herança
-  type Tplayer = class (TPersonagem)
-    NickName: String;
-    Experiencia: Double;
-  end;
-  type TBoss = class (TPersonagem)
-
-  end;
 
 implementation
   uses System.SysUtils;

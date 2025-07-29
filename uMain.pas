@@ -22,11 +22,11 @@ var
 implementation
 
 {$R *.dfm}
-  uses uClasse;
+  uses uClasse, uPlayer;
 
 procedure TForm1.Button1Click(Sender: TObject);
   var personagem: TPersonagem;
-  var player: Tplayer;
+      player: Tplayer;
 begin
   personagem:= Tpersonagem.Create(10, 12);
   //personagem.setDano(0);
@@ -34,7 +34,8 @@ begin
   //personagem.setGenero('Masculinoa');
   //personagem.setNivel(0);
   //personagem.setDefesa(0);
-  personagem.setVida(0);
+  //personagem.setVida(0);
+  player:= TPlayer.Create('Daniel');
 end;
 
 end.
