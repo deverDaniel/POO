@@ -29,10 +29,12 @@ procedure TForm1.Button1Click(Sender: TObject);
   var player: Tplayer;
 begin
   personagem:= Tpersonagem.Create(10, 12);
-  personagem.Nome:= 'Batman';
-  player:= Tplayer.Create(10, 12);
-  player.NickName:= 'Daniel';
-
+  //personagem.setDano(0);
+  //personagem.setNome('aaa');
+  //personagem.setGenero('Masculinoa');
+  //personagem.setNivel(0);
+  //personagem.setDefesa(0);
+  personagem.setVida(0);
 end;
 
 end.
