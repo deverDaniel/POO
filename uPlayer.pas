@@ -12,7 +12,6 @@ interface
     procedure setNickName(NickName: String);
     function getExperiencia: Double;
     procedure setExperiencia(Experiencia: Double);
-    constructor Create (NickName: String);
   end;
 
 
@@ -20,10 +19,6 @@ implementation
 
 { Tplayer }
 
-constructor Tplayer.Create(NickName: String);
-begin
-  Self.NickName:= NickName;
-end;
 
 function Tplayer.getExperiencia: Double;
 begin

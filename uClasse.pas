@@ -5,7 +5,7 @@ interface
   //Abstração
   //Encapsulamento
   type TPersonagem = class
-  private
+  protected
     Nome, Genero: String;
     Vida, Nivel, Dano, Defesa: Integer;
   public

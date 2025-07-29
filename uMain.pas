@@ -22,20 +22,29 @@ var
 implementation
 
 {$R *.dfm}
-  uses uClasse, uPlayer;
+  uses uClasse, uPlayer, uBoss;
 
 procedure TForm1.Button1Click(Sender: TObject);
   var personagem: TPersonagem;
       player: Tplayer;
+      boss: Tboss;
 begin
-  personagem:= Tpersonagem.Create(10, 12);
+  //personagem:= Tpersonagem.Create(10, 12);
   //personagem.setDano(0);
   //personagem.setNome('aaa');
   //personagem.setGenero('Masculinoa');
   //personagem.setNivel(0);
   //personagem.setDefesa(0);
   //personagem.setVida(0);
-  player:= TPlayer.Create('Daniel');
+  //player:= TPlayer.Create('Daniel');
+
+  player:= TPlayer.Create(10,2);
+  player.setDano(10);
+   ShowMessage('Dano do player: ' + player.getDano.ToString);
+
+  boss:= Tboss.Create(10,2);
+  boss.setDano(10);
+  ShowMessage('Dano do boss: ' + boss.getDano.ToString);
 end;
 
 end.
