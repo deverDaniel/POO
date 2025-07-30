@@ -1,7 +1,7 @@
 unit uPlayer;
 
 interface
-  uses uClasse;
+  uses uPersonagem;
 
   type Tplayer = class (TPersonagem)
   private

@@ -1,4 +1,4 @@
-unit uClasse;
+unit uPersonagem;
 
 interface
 

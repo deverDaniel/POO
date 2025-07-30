@@ -22,7 +22,7 @@ var
 implementation
 
 {$R *.dfm}
-  uses uClasse, uPlayer, uBoss;
+  uses uPersonagem, uPlayer, uBoss;
 
 procedure TForm1.Button1Click(Sender: TObject);
   var personagem: TPersonagem;
@@ -39,11 +39,9 @@ begin
   //player:= TPlayer.Create('Daniel');
 
   player:= TPlayer.Create(10,2);
-  player.setDano(10);
-   ShowMessage('Dano do player: ' + player.getDano.ToString);
+  ShowMessage('Dano do player: ' + player.getDano.ToString);
 
   boss:= Tboss.Create(10,2);
-  boss.setDano(10);
   ShowMessage('Dano do boss: ' + boss.getDano.ToString);
 end;
 
